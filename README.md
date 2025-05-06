@@ -1,11 +1,29 @@
-# 浅井健一「プログラミングの基礎」サイエンス社(2009)
+# 浅井健一「プログラミングの基礎」サイエンス社(2007)
 
 - [サイエンス社ページ](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1160-1&y=2007)
 - [サポートページ](http://pllab.is.ocha.ac.jp/~asai/book/Top.html)
 
+2023年に第10版が出ていてすごい
+
+## 使い方
+
+`ocaml`で対話環境を起動
+
+対話環境の指示の区切りは`;;`
+
+対話環境でファイルを読むには`#use "FILENAME.ml"`
+
+対話環境起動時にファイルを読むには`ocml -init FILENAME.ml`
+
+バイトコードコンパイルは`ocamlc INPUTNAME -o OUTPUTNAME`
+
+ネイティブコードコンパイルは`ocamlopt INPUTNAME -o OUTPUTNAME`
+
 ## 環境構築
 
 PowerShell 7をインストールしそれをVSCodeのデフォルトターミナルに設定した後にopam2.3とocaml5.3.0を使えるようにする
+
+VSCode拡張のocaml platformにパッケージマネージャーもビルドシステムもlanguage serverも付いてくる
 
 以下の順に実行
 
